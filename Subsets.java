@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Iterator;
 
 
@@ -6,7 +7,7 @@ public class Subsets
 {
 	public ArrayList<ArrayList<Integer>> subsets(int s[])
 	{
-		
+		Arrays.sort(s);
 		ArrayList<ArrayList<Integer>> result = new ArrayList<ArrayList<Integer>>();
 		ArrayList<Integer> path = new ArrayList<Integer>();
 		subsets(s,path, 0, result);
@@ -32,7 +33,7 @@ public class Subsets
 	public static void main(String[] args)
 	{
 		Subsets set = new Subsets();
-		int s[] = {1,2,3};
+		int s[] = {4,1,0};
 		ArrayList<ArrayList<Integer>> result = set.subsets(s);
 		for (Iterator<ArrayList<Integer>> iterator = result.iterator(); iterator.hasNext();)
 		{
