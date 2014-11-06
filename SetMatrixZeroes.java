@@ -55,5 +55,15 @@ public class SetMatrixZeroes
 				matrix[0][i] = 0;
 			}
 		}
+		
+		if (column_has_zero)
+		{
+			for (int i = 0; i < m; i++)
+			{
+				matrix[i][0] = 0;
+			}
+		}
 	}
+	
+	
 }
