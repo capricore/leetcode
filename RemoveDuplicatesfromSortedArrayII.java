@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 
 public class RemoveDuplicatesfromSortedArrayII
 {
@@ -24,9 +26,6 @@ public class RemoveDuplicatesfromSortedArrayII
 		RemoveDuplicatesfromSortedArrayII removeDuplicatesfromSortedArrayII = new RemoveDuplicatesfromSortedArrayII();
 		int[] A = {1,1,1,2,2,3};
 		System.out.println(removeDuplicatesfromSortedArrayII.removeDuplicates(A));
-		for (int i : A)
-		{
-			System.out.println(i);
-		}
+		System.out.println(Arrays.toString(A));
 	}
 }
