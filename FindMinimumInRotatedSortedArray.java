@@ -21,4 +21,5 @@ public class FindMinimumInRotatedSortedArray
 		}
 		return minimun;
 	}
+	
 }
