@@ -42,7 +42,7 @@ public class SearchInRotatedSortedArrayII
 	public static void main(String[] args)
 	{
 		SearchInRotatedSortedArrayII searchInRotatedSortedArrayII = new SearchInRotatedSortedArrayII();
-		int A[] = {1,1,1,3,1};
-		System.out.println(searchInRotatedSortedArrayII.search(A, 3));
+		int A[] = {4,5,6,7,1,2};
+		System.out.println(searchInRotatedSortedArrayII.search(A, 1));
 	}
 }
