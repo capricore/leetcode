@@ -36,7 +36,7 @@ public class ReverseWordsInAString
 	
 	public static void main(String[] args)
 	{
-		String string = "a";
+		String string = "abc aa";
 		ReverseWordsInAString reverseWordsInAString = new ReverseWordsInAString();
 
 		System.out.println(reverseWordsInAString.reverseWords(string));

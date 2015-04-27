@@ -17,19 +17,28 @@ public class Subsets
 	
 	public void subsets(int s[], ArrayList<Integer> path, int index ,ArrayList<ArrayList<Integer>> result)
 	{
-		if(s.length == index)
-		{
-			@SuppressWarnings("unchecked")
-			ArrayList<Integer> array = (ArrayList<Integer>) path.clone();
-			result.add(array);
-			return;
+		@SuppressWarnings("unchecked")
+		ArrayList<Integer> array = (ArrayList<Integer>) path.clone();
+		result.add(array);
+		for (int i = index; i < s.length; i++) {
+			path.add(s[i]);
+			subsets(s, path, i+1, result);
+			path.remove(path.size()-1);
 		}
-		//不选择当前数
-		subsets(s, path, index+1, result);
-		//选择当前数
-		path.add(s[index]);
-		subsets(s, path, index+1, result);
-		path.remove(path.size()-1);
+		
+//		if(s.length == index)
+//		{
+//			@SuppressWarnings("unchecked")
+//			ArrayList<Integer> array = (ArrayList<Integer>) path.clone();
+//			result.add(array);
+//			return;
+//		}
+//		//不选择当前数
+//		subsets(s, path, index+1, result);
+//		//选择当前数
+//		path.add(s[index]);
+//		subsets(s, path, index+1, result);
+//		path.remove(path.size()-1);
 	}
 	public static void main(String[] args)
 	{
