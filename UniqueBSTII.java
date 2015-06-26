@@ -34,5 +34,7 @@ public class UniqueBSTII
 		}
 		return result;
 	}
-
+	public static void main(String[] args) {
+		new UniqueBSTII().generateTrees(3);
+	}
 }
